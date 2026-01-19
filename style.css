@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(213, 246, 244);
+}
+
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color:rgb(33, 138, 176);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+ button:hover{
+    background-color:rgb(45, 95, 92);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+
+ }
+
+#gameScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameBox {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(179, 183, 187, 0.5);
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+#message{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(12, 11, 11);
+    margin-top: 15px;
+    
+}
+
+#attemptsText{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(12, 11, 11);
+    margin-top: 15px;
+}
+
+#newGameBtn {
+    margin-top: 10px;
+}
+
+#userInput {
+    width: 100%;
+    max-width: 250px;
+    height: 30px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #888;
+    outline: none;
+    text-align: center;
+}
+
+/* focus effect */
+#userInput:focus {
+    border-color: rgb(33, 138, 176);
+    box-shadow: 0 0 5px rgba(33, 138, 176, 0.5);
+}
+
+
+#backArrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .gameBox {
+        padding: 15px;
+    }
+
+    #backArrow {
+        font-size: 16px;
+        top: 15px;
+        left: 15px;
+    }
+}
+
+
+button, input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+
+
+
